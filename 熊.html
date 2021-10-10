@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .bear {
+      width: 400px;
+      height: 400px;
+      background-color: black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+    }
+
+    .bear::before {
+      content: "";
+      width: 100px;
+      height: 100px;
+      background-color: rgb(255, 0, 0);
+      position: absolute;
+      top: 50%;
+      left: -5%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+    }
+
+    .bear::after {
+      content: "";
+      width: 100px;
+      height: 100px;
+      background-color: rgb(255, 0, 0);
+      position: absolute;
+      top: 50%;
+      right: -5%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+    }
+
+    /* 白鼻 黑耳朵 */
+    .bear2 {
+      width: 175px;
+      height: 120px;
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+    }
+
+    .bear2::before {
+      content: "";
+      width: 70px;
+      height: 70px;
+      background-color: rgb(0, 0, 0);
+      position: absolute;
+      top: -133%;
+      right: -47%;
+      border-radius: 50%;
+    }
+
+    .bear2::after {
+      content: "";
+      width: 70px;
+      height: 70px;
+      background-color: rgb(0, 0, 0);
+      position: absolute;
+      top: -133%;
+      left: -47%;
+      border-radius: 50%;
+    }
+
+    /* V字 鼻 */
+    .bear3 {
+      width: 45px;
+      height: 30px;
+      background-color: rgb(0, 0, 0);
+      position: absolute;
+      top: 42%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 50%;
+    }
+
+    .bear3::before {
+      content: "";
+      width: 50px;
+      height: 50px;
+      background-color: white;
+      position: absolute;
+      top: 450%;
+      left: 60%;
+      transform: translateX(-50%);
+      transform: skew(-50deg, 0deg);
+    }
+
+    .bear3::after {
+      content: "";
+      width: 50px;
+      height: 50px;
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      top: 450%;
+      right: 60%;
+      transform: translateX(-50%);
+      transform: skew(50deg, 0deg);
+    }
+
+    /* 嘴 白耳*/
+    .bear4 {
+      width: 110px;
+      height: 40px;
+      background-color: rgb(0, 0, 0);
+      position: absolute;
+      top: 54%;
+      right: 50%;
+      transform: translateX(50%);
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .bear4::before {
+      content: "";
+      width: 45px;
+      height: 45px;
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      bottom: 499%;
+      right: 152%;
+      border-radius: 50%;
+    }
+
+    .bear4::after {
+      content: "";
+      width: 45px;
+      height: 45px;
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      bottom: 499%;
+      left: 152%;
+      border-radius: 50%;
+    }
+
+    /* 白眼 */
+    .bear5 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .bear5::before {
+      content: "";
+      width: 75px;
+      height: 75px;
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      bottom: 61%;
+      right: 59%;
+      border-radius: 50%;
+    }
+
+    .bear5::after {
+      content: "";
+      width: 75px;
+      height: 75px;
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      bottom: 61%;
+      left: 59%;
+      border-radius: 50%;
+    }
+
+    /* 黑眼 */
+    .bear6 {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .bear6::before {
+      content: "";
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background-color: rgb(0, 0, 0);
+      position: absolute;
+      top: 91px;
+      left: 99px;
+    }
+
+    .bear6::after {
+      content: "";
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background-color: rgb(0, 0, 0);
+      position: absolute;
+      top: 91px;
+      left: 245px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bear">
+    <div class="bear2"></div>
+    <div class="bear3"></div>
+    <div class="bear4"></div>
+    <div class="bear5"></div>
+    <div class="bear6"></div>
+  </div>
+</body>
+
+</html>
